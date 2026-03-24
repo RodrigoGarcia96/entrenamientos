@@ -167,9 +167,3 @@ INSERT INTO `t_ventas` (`id_ventas`, `id_clientes`, `id_producto`, `id_vendedor`
 	(49, 58398, 12340, 67847, '2015-07-06'),
 	(50, 58396, 12345, 67841, '2015-07-06');
 
-select t_proveedor.id_proveedor ,t_proveedor.nombre, t_proveedor.apellido, t_productos.modelo, t_productos.marca from t_proveedor 
-inner join t_productos on t_proveedor.id_proveedor = t_productos.id_proveedor 
-where t_proveedor.id_proveedor = 45636;
-
-
-select * from t_ventas
