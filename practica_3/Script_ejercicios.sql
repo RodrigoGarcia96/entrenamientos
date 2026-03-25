@@ -10,10 +10,12 @@ SELECT prov.nombre, prov.apellido, prod.modelo, prod.marca
 FROM t_proveedor prov
 inner JOIN t_productos prod
 ON prod.id_proveedor = prov.id_proveedor
-where prov.id_proveedor = 45636; /* obtener id 45636 haciendo un inner join*/
+where prov.id_proveedor = 45636; /* obtener id 45636 haciendo un inner join */
 
 select * from t_ventas
 
+
+CREATE VIEW `Ventas Completas` AS /* Crear vista con option y } para sacar ``*/
 SELECT vent.id_ventas, cli.nombre, cli.apellido,prod.modelo, prod.marca, vent.fecha 
 from t_ventas vent
 inner JOIN t_clientes cli
